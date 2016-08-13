@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HTML5 boilerplate – all you really need…</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/lori_style.css">
+  <link rel="stylesheet" href="css/lori_grid.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans+Condensed:300,700,300italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Abel|Asap:400,400italic,700,700italic|Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+  <script src="js/main.js"></script>
+
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbFmZrzuj2rq_i-fBgSImLahwZ-2zO5fw"></script>
+  <script type="text/javascript" src="js/mapStyle.js"></script>
+  
+  <script src="http://cdn.pubnub.com/pubnub-3.7.1.min.js"></script>
+  <script type="text/javascript" src="js/map.js"></script>
+
+  <script src="https://use.fontawesome.com/623d2a2264.js"></script>
+  <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body id="home">
+
+    <!-- NAVIGATION -->
+
+    <div id="masthead">
+      <div class="oui-masthead light">
+        <div class="oui-masthead__wrapper">
+          <div class="oui-masthead__nav-wrapper">
+            <ul class="title-area">
+              <li class="name">
+                <a href="index.html" target="_self">Lori</a>
+              </li>
+              <li class="oui-masthead__nav-item">
+                <a href="index.html#request-quote" class="oui-masthead__nav-link u-hidden-sm u-hidden-xs u-hidden-md">Get a New Quote</a>
+              </li>
+            </ul>
+            <div class="oui-masthead__nav-list u-hidden-md">
+              <ul class="oui-masthead__nav-items">
+                <li class="oui-masthead__nav-item">
+                  <a class="oui-masthead__nav-link"><i class="fa fa-comment u-p-right" aria-hidden="true"></i>+254 661 746 9394</a>
+                </li>
+                <li class="oui-masthead__nav-item">
+                  <a class="oui-masthead__nav-link"><i class="fa fa-envelope u-p-right" aria-hidden="true"></i>support@lori.com</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="" id="content">
+      <div class="row expanded tracking-wrapper">
+        <div class="medium-6 large-7 small-12 columns extralarge-8 u-p-x-0 map-wrapper">
+          <div id='map' style='width: 100%; height: 100%;'>
+          </div>
+        </div>
+        <div class="medium-6 large-5 small-12 extralarge-4 columns u-p-x-0 shadow">
+          <section class="content-section-padding tracking-info-wrapper">
+            <h2>We are preparing your shipment</h2>
+
+            <h4 class="u-m-top-0">Unique ID: L647382948475</h4>
+            <ul class="shipping-log u-p-top">
+              <li class="active">Preparing to ship</li>
+              <li class="">Picked up</li>
+              <li class="=">En route</li>
+              <li class="">Delivered</li>
+            </ul>
+
+            <hr>
+
+            <div class="row u-m-top">
+              <div class="small-3 columns u-m-btm u-p-left-0">
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR2aovDI3Uz74WBGyfn8uJzIf5bi6ousUO83He-Qd1P9ju9iYVOfw" class="round" style="max-width: 100%">
+              </div>
+              <div class="small-9 columns u-p-x-0">
+                <p><strong>Anthony Smith</strong></p>
+                <p><strong>Experience:</strong> 5 years</p>
+                <p><strong>Commercial Driver License:</strong> received in 2008</p>
+              </div>
+            </div>
+
+            <hr>
+            <h4>Pick Up Info</h4>
+
+            <div class=" u-p-top row">
+              <div class="columns small-12 medium-12 large-12 u-p-left-0">
+                <div class="oui-form__field oui-form__field-reduced oui-form__field_full"> 
+                  <label class="oui-form__label" for="name">Street Landmark</label>
+                  <input name="address" class="oui-form__input oui-form__reduced" value="Cedar Street and Canal Street, near 7eleven" disabled>
+                </div>
+              </div>
+              <div class="columns small-12 medium-12 large-4 u-p-left-0">
+                <div class="oui-form__field oui-form__field-reduced oui-form__field_full">
+                  <label class="oui-form__label" for="name">City</label>
+                  <input name="firstName" class="oui-form__input oui-form__reduced" value="Nairobi" disabled>
+                </div>
+              </div>
+              <div class="columns small-6 medium-6 large-4 u-p-left-0">
+                <div class="oui-form__field oui-form__field-reduced oui-form__field_full">
+                  <label class="oui-form__label" for="email">Pick Up Date</label>
+                  <input name="lastName" class="oui-form__input oui-form__reduced u-m-btm-0" type="date" value="2016-04-02" disabled>
+                </div>
+              </div>
+              <div class="columns small-6 medium-6 large-4 u-p-left-0">
+                <div class="oui-form__field oui-form__field-reduced oui-form__field_full u-m-btm-0">
+                  <label class="oui-form__label" for="name">Load Size (ton)</label>
+                  <input name="loadSize" class="oui-form__input oui-form__reduced" value="20" type="number" disabled>
+                </div>
+              </div>
+            </div>
+            
+            <div class=" row">
+
+              <div class="columns small-6 medium-6 large-4 u-p-left-0">
+                <div class="oui-form__field oui-form__field-reduced oui-form__field_full u-m-btm-0">
+                  <label class="oui-form__label" for="name">Container No/ID</label>
+                  <input name="firstName" class="oui-form__input oui-form__reduced" value="A7485930" disabled>
+                </div>
+              </div>
+              <div class="columns small-6 medium-6 large-4 u-p-left-0">
+                <div class="oui-form__field oui-form__field-reduced oui-form__field_full u-m-btm-0">
+                  <label class="oui-form__label" for="name">Package Size</label>
+                  <input name="firstName" class="oui-form__input oui-form__reduced" value="20ft container" disabled>
+                </div>
+              </div>
+
+            </div>
+            <div class="u-p-top row">
+              <div class="columns small-12 medium-12 large-12 u-p-left-0">
+                <div class="form-field legal-accept">
+                  <input class="legal-accept__input ng-pristine ng-untouched ng-invalid ng-invalid-required" id="legal-accept" name="legal" ng-model="membership.accepted_terms" ng-required="true" type="checkbox" checked disabled>
+                  <label class="legal-accept__label" for="legal-accept">Hazardous Material</label>
+                </div>
+              </div>
+              <div class="columns small-12 medium-12 large-12 u-p-left-0">
+                <div class="form-field legal-accept">
+                  <input class="legal-accept__input ng-pristine ng-untouched ng-invalid ng-invalid-required" id="legal-accept" name="legal" ng-model="membership.accepted_terms" ng-required="true" type="checkbox" disabled>
+                  <label class="legal-accept__label" for="legal-accept">Custom Clearance</label>
+                </div>
+              </div>
+            </div>
+            <hr class="u-m-top-0">
+            <h4>Delivery Info</h4>
+
+            <div class="u-p-top row">
+              <div class="columns small-12 medium-12 large-12 u-p-left-0">
+                <div class="oui-form__field oui-form__field-reduced oui-form__field_full"> 
+                  <label class="oui-form__label" for="name">Street Landmark</label>
+                  <input name="address" class="oui-form__input oui-form__reduced" value="Port of Mombasa" disabled>
+                </div>
+              </div>
+              <div class="columns small-6 medium-6 large-4 u-p-left-0">
+                <div class="oui-form__field oui-form__field-reduced oui-form__field_full">
+                  <label class="oui-form__label" for="name">City</label>
+                  <input name="city" class="oui-form__input oui-form__reduced" value="Mombasa" disabled>
+                </div>
+              </div>
+              <div class="columns small-6 medium-6 large-4 u-p-left-0">
+                <div class="oui-form__field oui-form__field-reduced oui-form__field_full">
+                  <label class="oui-form__label" for="name">Country</label>
+                  <input name="country" class="oui-form__input oui-form__reduced" value="Kenya" disabled>
+                </div>
+              </div>
+            </div>
+
+            <hr class="u-m-top-0">
+            <h4>Contact Info</h4>
+
+            <div class="u-p-top row">
+              <div class="columns small-12 medium-12 large-4 u-p-left-0">
+                <div class="oui-form__field oui-form__field_full oui-form__field-reduced u-m-btm-0"> 
+                  <label class="oui-form__label" for="name">Company Name</label>
+                  <input name="companyName" class="oui-form__input oui-form__reduced" value="FastCo" disabled>
+                </div>
+              </div>
+              <div class="columns small-6 medium-6 large-4 u-p-left-0">
+                <div class="oui-form__field oui-form__field_full oui-form__field-reduced u-m-btm-0">
+                  <label class="oui-form__label" for="name">First Name</label>
+                  <input name="firstName" class="oui-form__input oui-form__reduced" value="John" disabled>
+                </div>
+              </div>
+              <div class="columns small-6 medium-6 large-4 u-p-left-0">
+                <div class="oui-form__field oui-form__field_full oui-form__field-reduced u-m-btm-0">
+                  <label class="oui-form__label" for="email">Last Name</label>
+                  <input name="lastName" class="oui-form__input oui-form__reduced" value="Appleseed" disabled>
+                </div>
+              </div>
+            </div>
+
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+  <div class="larry-footer">
+    <div class="larry-container">
+      <div class="row larry-footer__container">
+        <div class="large-3 columns"><img src="img/logo.png" class="larry-footer__stamp u-m-top" width="100px"></div>
+        <div class="large-9 columns">
+          <!-- <nav class="larry-footer__nav">
+            <ul class="larry-footer__nav-list">
+              <li class="larry-footer__nav-item"><a href="#" class="larry-footer__nav-link">About Us</a></li>
+              <li class="larry-footer__nav-item"><a href="#" class="larry-footer__nav-link">FAQ</a></li>
+              <li class="larry-footer__nav-item"><a href="#" class="larry-footer__nav-link">Press</a></li>
+              <li class="larry-footer__nav-item"><a href="#" class="larry-footer__nav-link">Privacy Policy</a></li>
+            </ul>
+          </nav> -->
+          <div class="row">
+            <div class="sm-12 lg-6 col">
+              <address class="larry-footer__address">
+                <strong>Lori</strong><br><span class="u-text-detroit">
+                <a href="tel:+254 795 62 04 62">+254 877.275.4530</a><br></span>
+                <a href="mailto:lorisystemske@gmail.com" class="larry-footer__link">lorisystemske@gmail.com</a></address>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </body>
+    </html>
